@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Box Icons -->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Google Fonts -->
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="css/style.css">
+
+     <title>Sidebar</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logoContent">
+            <div class="logo">
+                <i class='bx bx-code-alt'></i>
+                
+                <div class="logoNome">Portfólio - Front end</div>
+            </div>
+                <!--logo-->
+                <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <!--logoContent-->
+        <ul class="nav-list">
+
+            <!-- <li>
+                <i class='bx bx-search-alt' ></i>
+            <input type="search" name="search" id="" placeholder="Procurar..." >
+            </li> -->
+            
+            <li>
+                <i class='bx bxs-grid'></i>
+                <a class="links_name">Dashboard</a>
+            </li>
+
+            <li>
+                <i class='bx bxs-user-circle'></i>
+                <a class="links_name">Usuários</a>
+            </li>
+
+            <li>
+                <i class='bx bxs-cog'></i>
+                <a class="links_name">Configurações</a>
+            </li>
+
+            <li>
+                <i class='bx bxs-folder-open'></i>
+                <a class="links_name">Arquivos</a>
+            </li>
+
+            <li>
+                <i class='bx bx-chat'></i>
+                <a class="links_name">Mensagens</a>
+            </li>
+
+            <li>
+                <i class='bx bx-line-chart'></i>
+                <a class="links_name">Relatórios</a>
+            </li>
+
+            <li>
+                <i class='bx bx-cart'></i>
+                <a class="links_name">Vendas</a>
+            </li>
+
+        </ul>
+        <!--nav list-->
+
+        <div class="profileContent">
+            <div class="profile">
+                <div class="profileDetail">
+                    <img src="/programmer.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Programador</div>
+                        <div class="job">Front-end DEV</div>
+                    </div>
+                </div>
+                <!--profiledetail-->
+                <i class="bx bxl-github" id="logout"></i> 
+            </div>
+        </div>
+
+    </div>
+        <!--sidebar-->
+
+
+        <script>
+            // variáveis
+            const btn = document.querySelector('#btn');
+            const bxSearch = document.querySelector('.bx-search');
+            const sidebar = document.querySelector('.sidebar');
+            const home = document.querySelector('.homeContent');
+    
+            // Eventos de escuta do click
+            btn.addEventListener('click',()=>{
+                sidebar.classList.toggle('active');
+                home.classList.toggle('active');
+            });
+    
+            bxSearch.addEventListener('click',()=>{
+                sidebar.classList.toggle('active');
+                home.classList.toggle('active');
+            });
+        </script>
+
+</body>
+</html>
